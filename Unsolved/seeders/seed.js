@@ -66,9 +66,9 @@ const imageSeed = [
   }
 ];
 
-db.Images.deleteMany({})
+db.Image.deleteMany({})
   .then(() => {console.log('before')
-               db.Images.collection.insertMany(imageSeed)
+               db.Image.collection.insertMany(imageSeed)
                console.log('after')})
   .then(data => {
     console.log(data.result.n + ' records inserted!');
