@@ -8,6 +8,6 @@ const imageSchema = new Schema({
   date: { type: Date, default: Date.now }
 });
 
-const Images = mongoose.model('Images', imageSchema);
+const Image = mongoose.model('Images', imageSchema);
 
-module.exports = Images;
+module.exports = Image;
